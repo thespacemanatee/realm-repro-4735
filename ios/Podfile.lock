@@ -6,16 +6,7 @@ PODS:
     - ExpoModulesCore
   - EXApplication (4.2.2):
     - ExpoModulesCore
-  - EXBarCodeScanner (11.4.0):
-    - EXImageLoader
-    - ExpoModulesCore
-    - ZXingObjC/OneD
-    - ZXingObjC/PDF417
-  - EXCamera (12.3.0):
-    - ExpoModulesCore
   - EXConstants (13.2.2):
-    - ExpoModulesCore
-  - EXDevice (4.3.0):
     - ExpoModulesCore
   - EXErrorRecovery (3.2.0):
     - ExpoModulesCore
@@ -23,14 +14,9 @@ PODS:
     - ExpoModulesCore
   - EXFont (10.2.0):
     - ExpoModulesCore
-  - EXImageLoader (3.2.0):
-    - ExpoModulesCore
-    - React-Core
   - EXJSONUtils (0.3.0)
   - EXManifests (0.3.0):
     - EXJSONUtils
-  - EXNotifications (0.16.1):
-    - ExpoModulesCore
   - Expo (46.0.0-beta.6):
     - ExpoModulesCore
   - expo-dev-client (1.1.1):
@@ -105,11 +91,7 @@ PODS:
     - expo-dev-menu/GestureHandler
     - expo-dev-menu/Reanimated
     - expo-dev-menu/SafeAreaView
-  - ExpoHaptics (11.3.0):
-    - ExpoModulesCore
   - ExpoKeepAwake (10.2.0):
-    - ExpoModulesCore
-  - ExpoLinearGradient (11.4.0):
     - ExpoModulesCore
   - ExpoModulesCore (0.11.3):
     - React-Core
@@ -431,37 +413,27 @@ PODS:
     - React-jsi (= 0.69.2)
     - React-logger (= 0.69.2)
     - React-perflogger (= 0.69.2)
+  - RealmJS (11.0.0-rc.1):
+    - React
   - Yoga (1.14.0)
-  - ZXingObjC/Core (3.6.5)
-  - ZXingObjC/OneD (3.6.5):
-    - ZXingObjC/Core
-  - ZXingObjC/PDF417 (3.6.5):
-    - ZXingObjC/Core
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EASClient (from `../node_modules/expo-eas-client/ios`)
   - EXApplication (from `../node_modules/expo-application/ios`)
-  - EXBarCodeScanner (from `../node_modules/expo-barcode-scanner/ios`)
-  - EXCamera (from `../node_modules/expo-camera/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
-  - EXDevice (from `../node_modules/expo-device/ios`)
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
-  - EXImageLoader (from `../node_modules/expo-image-loader/ios`)
   - EXJSONUtils (from `../node_modules/expo-json-utils/ios`)
   - EXManifests (from `../node_modules/expo-manifests/ios`)
-  - EXNotifications (from `../node_modules/expo-notifications/ios`)
   - Expo (from `../node_modules/expo`)
   - expo-dev-client (from `../node_modules/expo-dev-client/ios`)
   - expo-dev-launcher (from `../node_modules/expo-dev-launcher`)
   - expo-dev-menu (from `../node_modules/expo-dev-menu`)
   - expo-dev-menu-interface (from `../node_modules/expo-dev-menu-interface/ios`)
-  - ExpoHaptics (from `../node_modules/expo-haptics/ios`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
-  - ExpoLinearGradient (from `../node_modules/expo-linear-gradient/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core/ios`)
   - EXSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - EXStructuredHeaders (from `../node_modules/expo-structured-headers/ios`)
@@ -500,6 +472,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RealmJS (from `../node_modules/realm`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -507,7 +480,6 @@ SPEC REPOS:
     - ASN1Decoder
     - fmt
     - libevent
-    - ZXingObjC
 
 EXTERNAL SOURCES:
   boost:
@@ -518,28 +490,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-eas-client/ios"
   EXApplication:
     :path: "../node_modules/expo-application/ios"
-  EXBarCodeScanner:
-    :path: "../node_modules/expo-barcode-scanner/ios"
-  EXCamera:
-    :path: "../node_modules/expo-camera/ios"
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
-  EXDevice:
-    :path: "../node_modules/expo-device/ios"
   EXErrorRecovery:
     :path: "../node_modules/expo-error-recovery/ios"
   EXFileSystem:
     :path: "../node_modules/expo-file-system/ios"
   EXFont:
     :path: "../node_modules/expo-font/ios"
-  EXImageLoader:
-    :path: "../node_modules/expo-image-loader/ios"
   EXJSONUtils:
     :path: "../node_modules/expo-json-utils/ios"
   EXManifests:
     :path: "../node_modules/expo-manifests/ios"
-  EXNotifications:
-    :path: "../node_modules/expo-notifications/ios"
   Expo:
     :path: "../node_modules/expo"
   expo-dev-client:
@@ -550,12 +512,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-dev-menu"
   expo-dev-menu-interface:
     :path: "../node_modules/expo-dev-menu-interface/ios"
-  ExpoHaptics:
-    :path: "../node_modules/expo-haptics/ios"
   ExpoKeepAwake:
     :path: "../node_modules/expo-keep-awake/ios"
-  ExpoLinearGradient:
-    :path: "../node_modules/expo-linear-gradient/ios"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core/ios"
   EXSplashScreen:
@@ -628,6 +586,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RealmJS:
+    :path: "../node_modules/realm"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -637,25 +597,18 @@ SPEC CHECKSUMS:
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
   EASClient: a2581835cf9b97d0defd5d630fc6eb1bf77045e7
   EXApplication: e418d737a036e788510f2c4ad6c10a7d54d18586
-  EXBarCodeScanner: 8e13bad5d197b4b9a58d16af41f8690875a5f736
-  EXCamera: 9f8303a52b2027e007174c2068c2ac76ff41d974
   EXConstants: 190bee713ca3659b41d93aa3ee25af10aa50d833
-  EXDevice: 7647ca9b1fd8b269dfd896a7643d659343358054
   EXErrorRecovery: 74d71ee59f6814315457b09d68e86aa95cc7d05d
   EXFileSystem: 927e0a8885aa9c49e50fc38eaba2c2389f2f1019
   EXFont: a5d80bd9b3452b2d5abbce2487da89b0150e6487
-  EXImageLoader: b88e053d760f85a82405b1db2de4abf11978fc9f
   EXJSONUtils: 2a74b8f40f1523cc3f92af99c91aa78201737a77
   EXManifests: 0c6134b7b6f3236a93a778c3f44ba1cfb3f9fa3d
-  EXNotifications: 9a2aa201deb19dfe1dbe0e370eeb2922de0d2422
   Expo: 5961b98e58f99a0daadae52fbc5ea92d3fc7f896
   expo-dev-client: b2b9124ff8cab657d9edffee3d46e48a90eac8d2
   expo-dev-launcher: e1eff308b69593cf37a84ce130fda99313828ada
   expo-dev-menu: f12ade8672206e00ff7c761c423cb7782d1fc241
   expo-dev-menu-interface: 74897b3e648ea6d911ac7a12df03eb3969383e8e
-  ExpoHaptics: efe9e68e9dfe0d15c183c0c70a25f3874124ab9e
   ExpoKeepAwake: 0e8f18142e71bbf2c7f6aa66ebed249ba1420320
-  ExpoLinearGradient: 1a3af07c6dab3c612967a294836df9ae717431df
   ExpoModulesCore: 8303cc952788be09fc6eab62815d257016ae6dec
   EXSplashScreen: 31ab6df6d23e97e074d1330224741979943f1d82
   EXStructuredHeaders: 5d86829469399370a9fc7cb1e4391b09de87681d
@@ -694,8 +647,8 @@ SPEC CHECKSUMS:
   React-RCTVibration: 0d07f00705b5f11e88aaaaf9131f5e1785d4bd6e
   React-runtimeexecutor: 8030b9cf9b9e87b878d92da680b55b5e74c58e70
   ReactCommon: a9414b91f0d19de002b55d9f4f6cb176d6dd8452
+  RealmJS: 2f39ca82a7e299c0b17f0b18508564be0e67c1d9
   Yoga: 236056dd74cda4d9d76c20306fd8c20bb087614d
-  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
 PODFILE CHECKSUM: 6d9ff462516103cf9d070190e50ccd8674aadfce
 
