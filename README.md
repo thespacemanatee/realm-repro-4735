@@ -1,39 +1,17 @@
-# Development Client example
+# Realm Issue #4735 Repro
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-</p>
+## Summary
 
-Experiment with Development Client in SDK 40.
+This is a repro project for the issue [#4735](https://github.com/realm/realm-js/issues/4735).
 
-## 🚀 How to use
+This project is was bootstrapped with `npx crna -t with-dev-client` and `EXPO_BETA=1 expo-cli upgrade` and updated dependencies. The `with-realm` branch includes `realm@11.0.0-rc.1` and should crash on startup while the `without-realm` branch does not include this dependecy and should not crash.
 
-> `npx create-react-native-app my-app -t with-dev-client`
+## Instructions
 
-- Run `expo start --dev-client`, try it out.
+```sh
+yarn
 
-## 🏗 Build with EAS
+npx pod-install
 
-You can easily use this project with `EAS` - just follow the steps below.
-
-### ⚙️ Prepare project
-
-- adjust value of `ios.bundleIdentifier` and `android.package` in `app.json`
-- run `eas build:configure`
-
-### 💪 Build whatever you want
-
-This example comes with two pre-configured build types: `release` (a production version of your app - ready to be uploaded to stores), `with-dev-client` (a development version of your app that can be shared with your teammates).
-
-To build the app with the dev client, just run `eas build --profile with-dev-client`.
-
-> **Note**: the `with-dev-client` uses the **internal distribution** on **iOS**. That's why, you need to add your device to be able to install the built app. To do it, you can use `eas device:create`.
-
-**For more information about EAS, check out [documentation](https://docs.expo.dev/eas/).**
-
-## 📝 Notes
-
-- [Development Client docs](https://docs.expo.dev/clients/introduction/)
+yarn ios
+```
