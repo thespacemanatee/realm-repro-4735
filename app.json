@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "exporepro18317",
+    "slug": "exporepro18317",
+    "scheme": "exporepro18317",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.exporepro18317.exporepro18317"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.exporepro18317"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
