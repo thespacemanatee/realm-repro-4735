@@ -17,5 +17,5 @@ yarn
 
 npx pod-install
 
-yarn ios
+yarn ios --configuration Release
 ```
